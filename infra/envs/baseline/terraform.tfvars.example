@@ -1,0 +1,33 @@
+project              = "azure-lab"
+owner                = "security-research"
+environment          = "lab"
+ttl_hours            = 24
+location             = "eastus"
+
+# Networking / access
+enable_jumpbox_public_ip = false
+admin_public_ip_cidr     = "203.0.113.10/32"
+
+# Optional logging
+enable_log_analytics = false
+
+# Identity
+tenant_domain   = "contoso.onmicrosoft.com"
+alice_password  = "ReplaceWithStrongPassword!123"
+bob_password    = "ReplaceWithStrongPassword!123"
+charlie_password = "ReplaceWithStrongPassword!123"
+
+# VM credentials
+linux_admin_username  = "azureuser"
+linux_admin_password  = "ReplaceWithStrongPassword!123"
+windows_admin_username = "azureadmin"
+windows_admin_password = "ReplaceWithStrongPassword!123"
+jumpbox_admin_username = "jumpadmin"
+jumpbox_admin_password = "ReplaceWithStrongPassword!123"
+
+# Key Vault
+sample_secret_value = "dummy-secret-value"
+key_vault_name      = "kv-azure-lab-demo"
+
+# App registration
+app_display_name = "baseline-lab-app"
